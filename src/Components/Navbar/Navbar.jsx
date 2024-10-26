@@ -34,7 +34,6 @@ const Navbar = () => {
             <li><NavLink to={"/estimatingCosting"}>Estimating_and_Costing</NavLink></li>
             <li><NavLink to={"/soilTestPiling"}>Soil_test_and_piling</NavLink></li>
             <li><NavLink to={"/plumbingDesign"}>Plumbing_Design</NavLink></li>
-              <li><NavLink to={"/digitalSurvey"}>Digital_Survey</NavLink></li>
               <li><NavLink to={"/duplexDesign"}>Duplex_House_ Design</NavLink></li>
             </ul>
           </details>
@@ -48,7 +47,7 @@ const Navbar = () => {
       <img src={logo} alt="logo" className='h-16 w-20' />
     </div>
     <div className="navbar-center hidden lg:flex">
-      <ul className="menu menu-horizontal px-1 gap-3 text-pretty font-medium">
+      <ul className="menu menu-horizontal px-1 gap-3 text-pretty font-medium text-[1rem]">
         <li><NavLink to={"/"}>Home</NavLink></li>
         <li>
           <details>
@@ -81,12 +80,12 @@ const Navbar = () => {
       </div>
       <ul
         tabIndex={0}
-        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow ">
         <li>
-            <NavLink className="justify-between"> Login <span className="badge">New</span></NavLink>
+            <NavLink to={"login"} className="justify-between"> Login <span className="badge"><NavLink to={"registration"}>New</NavLink></span></NavLink>
         </li>
         <li><a>Settings</a></li>
-        <li><a>Logout</a></li>
+        <li><NavLink>Logout</NavLink></li>
       </ul>
     </div>
     </div>
